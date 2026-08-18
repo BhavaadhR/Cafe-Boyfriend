@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login</title>
+<link rel="stylesheet" href="assets/style.css">
+
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('assets/JapanKyotoBackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  /* Center the login card below the nav */
+  .login-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100% - 46px); /* subtract roughly the nav height */
+    padding: 24px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 320px;
+    padding: 24px;
+    background-color: hsla(240, 64%, 27%, 0.4); /* navy, transparent */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    text-align: center;
+    backdrop-filter: blur(2px);
+  }
+
+  .container h1 {
+    color: white;
+    margin-top: 0;
+  }
+
+  .container label {
+    display: block;
+    text-align: left;
+    color: white;
+    margin-bottom: 4px;
+  }
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px;
+    margin: 0 0 16px 0;
+    border: none;
+    border-radius: 4px;
+    background: hsla(0, 0%, 100%, 0.85);
+  }
+
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #fff;
+    outline: none;
+  }
+
+  .btn {
+    background-color: pink;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    opacity: 0.9;
+  }
+
+  .btn:hover {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+
+  <h2 style="text-align:center; color:white">Cafe Boyfriend Login Page</h2>
+
+  <div class="topnav">
+    <a href="MainMenu.html">Home</a>
+    <a href="Menu.html">Menu</a>
+    <a class="active" href="Login.html">Account</a>
+    <a href="Packages.html">Rent-A-Boyfriend Packages</a>
+    <a href="AboutUs.html">About us</a>
+  </div>
+
+  <div class="login-wrap">
+    <form action="/action_page.php" class="container">
+      <h1>Login</h1>
+      <label for="email">Email</label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+      <label for="psw">Password</label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+      <a href="MainMenu.html" class="btn">Login</a>
+    </form>
+  </div>
+
+</body>
+</html>
